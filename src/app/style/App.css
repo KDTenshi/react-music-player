@@ -2,4 +2,118 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(#000, #277ca5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Track {
+  width: 50vw;
+  height: 75vh;
+  background: #000;
+  border-radius: 25px;
+  border: 2px solid #64c2ec;
+  box-shadow: 0 0 10px #b8f5ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Title {
+  font-size: 35px;
+  color: #b8f5ff;
+  text-align: center;
+}
+
+.Author {
+  font-size: 20px;
+  color: #64c2ec;
+  text-align: center;
+}
+
+.Image {
+  width: 250px;
+  height: 250px;
+  background: #277ca5;
+  border-radius: 15px;
+  border: 2px solid #64c2ec;
+  box-shadow: 0 0 10px #b8f5ff;
+}
+
+.Controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.Button span {
+  font-size: 48px;
+  color: #64c2ec;
+}
+
+.Playtime {
+  width: 90% !important;
+}
+
+.Volume,
+.Playtime {
+  overflow: hidden;
+  width: 200px;
+  -webkit-appearance: none;
+  background: #277ca5;
+  border: 1px solid #64c2ec;
+}
+.Volume::-webkit-slider-runnable-track,
+.Playtime::-webkit-slider-runnable-track {
+  height: 20px;
+  -webkit-appearance: none;
+  color: #64c2ec;
+  margin-top: -1px;
+}
+.Volume::-webkit-slider-thumb,
+.Playtime::-webkit-slider-thumb {
+  width: 0;
+  -webkit-appearance: none;
+  height: 20px;
+  box-shadow: -200px 0 0 200px #64c2ec;
+}
+.Volume::-moz-range-progress,
+.Playtime::-moz-range-progress {
+  height: 20px;
+  background: #64c2ec;
+}
+.Volume::-moz-range-thumb,
+.Playtime::-moz-range-thumb {
+  height: 20px;
+  width: 0;
+  border: none;
+  box-shadow: -200px 0 0 200px #64c2ec;
+}
+.Volume::-ms-fill-lower,
+.Playtime::-ms-fill-lower {
+  background: #277ca5;
+}
+.Volume::-ms-fill-upper,
+.Playtime::-ms-fill-upper {
+  background: #64c2ec;
 }/*# sourceMappingURL=App.css.map */

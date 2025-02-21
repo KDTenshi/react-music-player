@@ -6,3 +6,119 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(c.$black, c.$blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Track {
+  width: 50vw;
+  height: 75vh;
+  background: c.$black;
+  border-radius: 25px;
+  border: 2px solid c.$blue;
+  box-shadow: 0 0 10px c.$blue-light;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Title {
+  font-size: 35px;
+  color: c.$blue-light;
+  text-align: center;
+}
+
+.Author {
+  font-size: 20px;
+  color: c.$blue;
+  text-align: center;
+}
+
+.Image {
+  width: 250px;
+  height: 250px;
+  background: c.$blue-dark;
+  border-radius: 15px;
+  border: 2px solid c.$blue;
+  box-shadow: 0 0 10px c.$blue-light;
+}
+
+.Controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+
+  & span {
+    font-size: 48px;
+    color: c.$blue;
+  }
+}
+
+.Playtime {
+  width: 90% !important;
+}
+
+.Volume,
+.Playtime {
+  overflow: hidden;
+  width: 200px;
+  -webkit-appearance: none;
+  background: c.$blue-dark;
+  border: 1px solid c.$blue;
+
+  &::-webkit-slider-runnable-track {
+    height: 20px;
+    -webkit-appearance: none;
+    color: c.$blue;
+    margin-top: -1px;
+  }
+
+  &::-webkit-slider-thumb {
+    width: 0;
+    -webkit-appearance: none;
+    height: 20px;
+    box-shadow: -200px 0 0 200px c.$blue;
+  }
+
+  &::-moz-range-progress {
+    height: 20px;
+    background: c.$blue;
+  }
+
+  &::-moz-range-thumb {
+    height: 20px;
+    width: 0;
+    border: none;
+    box-shadow: -200px 0 0 200px c.$blue;
+  }
+
+  &::-ms-fill-lower {
+    background: c.$blue-dark;
+  }
+
+  &::-ms-fill-upper {
+    background: c.$blue;
+  }
+}
